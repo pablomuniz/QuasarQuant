@@ -1,0 +1,221 @@
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:16:5: error: cannot bind type 'EURCurrency' to trait 'CollectionElement'
+    EURCurrency, USDCurrency, GBPCurrency, JPYCurrency, DEMCurrency, FRFCurrency,
+    ^~~~~~~~~~~
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:108:8: note: struct 'EURCurrency' does not implement all requirements for 'Copyable'
+struct EURCurrency(CurrencyActions):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:1:1: note: required function '__copyinit__' is not implemented
+# Mojo version of QuantLib's ql/currencies/exchangeratemanager.hpp
+^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:1:1: note: trait 'Copyable' declared here
+# Mojo version of QuantLib's ql/currencies/exchangeratemanager.hpp
+^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:1:1: note: inherited through 'CollectionElement' here
+# Mojo version of QuantLib's ql/currencies/exchangeratemanager.hpp
+^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:323:41: error: 'ExchangeRateManager' value has no attribute '_get_currency_from_string_code'
+            var source_ccy_variant = erm._get_currency_from_string_code(source_code_str)
+                                     ~~~^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:324:41: error: 'ExchangeRateManager' value has no attribute '_get_currency_from_string_code'
+            var target_ccy_variant = erm._get_currency_from_string_code(target_code_str)
+                                     ~~~^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:155:21: error: 'Dict[Int, List[StoredEntry]]' value has no attribute 'contains'
+        if self.data.contains(k):
+           ~~~~~~~~~^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:165:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), ATSCurrency(), 13.7603, Date(1,January,1999))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:166:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), BEFCurrency(), 40.3399, Date(1,January,1999))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:167:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), DEMCurrency(), 1.95583, Date(1,January,1999))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:168:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), ESPCurrency(), 166.386, Date(1,January,1999))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:169:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), FIMCurrency(), 5.94573, Date(1,January,1999))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:170:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), FRFCurrency(), 6.55957, Date(1,January,1999))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:171:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), GRDCurrency(), 340.750, Date(1,January,2001))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:172:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), IEPCurrency(), 0.787564, Date(1,January,1999))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:173:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), ITLCurrency(), 1936.27, Date(1,January,1999))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:174:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), LUFCurrency(), 40.3399, Date(1,January,1999))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:175:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), NLGCurrency(), 2.20371, Date(1,January,1999))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:176:17: error: invalid call to 'add': method argument #0 cannot be converted from 'EURCurrency' to 'CurrencyActions'
+        self.add(EURCurrency(), PTECurrency(), 200.482, Date(1,January,1999))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:178:17: error: invalid call to 'add': method argument #0 cannot be converted from 'TRYCurrency' to 'CurrencyActions'
+        self.add(TRYCurrency(), TRLCurrency(), 1000000.0, Date(1,January,2005))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:179:17: error: invalid call to 'add': method argument #0 cannot be converted from 'RONCurrency' to 'CurrencyActions'
+        self.add(RONCurrency(), ROLCurrency(), 10000.0, Date(1,July,2005))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:184:17: error: invalid call to 'add': method argument #0 cannot be converted from 'PENCurrency' to 'CurrencyActions'
+        self.add(pen, pei, 1000000.0, Date(1,July,1991))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:185:17: error: invalid call to 'add': method argument #0 cannot be converted from 'PEICurrencyDefinition' to 'CurrencyActions'
+        self.add(pei, peh, 1000.0, Date(1,February,1985))
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:145:8: note: function declared here
+    fn add(mut self, source_ccy: CurrencyActions, target_ccy: CurrencyActions, rate: Float64, start_date: Date, end_date: Date = Date.maxDate(), type: ExchangeRateType = ExchangeRateType.direct()):
+       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:189:21: error: 'Dict[Int, List[StoredEntry]]' value has no attribute 'contains'
+        if self.data.contains(k):
+           ~~~~~~~~~^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:264:31: error: existentials are not supported yet!
+            return EURCurrency() 
+                              ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:266:31: error: existentials are not supported yet!
+            return USDCurrency()
+                              ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:268:24: error: existentials are not supported yet!
+        return Currency(0, "", "") 
+                       ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:277:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return USDCurrency()
+                                                                         ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:284:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return USDCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:114:71: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return Currency(0, "", "") # EUR has no triangulation currency
+                                                                      ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:270:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:280:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:290:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:300:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:310:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:320:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:330:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:340:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:350:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:351:88: error: 'CurrencyActions' value has no attribute 'numeric_code'
+    fn __eq__(self, other: CurrencyActions) -> Bool: return self.numericCode() == other.numeric_code()
+                                                                                  ~~~~~^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:360:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:381:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:391:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return EURCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:257:71: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return Currency(0, "", "")
+                                                                      ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:247:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return TRYCurrency()
+                                                                         ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:206:71: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return Currency(0, "", "")
+                                                                      ^
+Included from /app/quantfork/ql/currencies/exchangeratemanager.mojo:4:
+/app/quantfork/ql/currencies/europe.mojo:196:74: error: existentials are not supported yet!
+    fn triangulationCurrency(self) -> CurrencyActions: return RONCurrency()
+                                                                         ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:264:31: error: existentials are not supported yet!
+            return EURCurrency() 
+                              ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:266:31: error: existentials are not supported yet!
+            return USDCurrency()
+                              ^
+/app/quantfork/ql/currencies/exchangeratemanager.mojo:268:24: error: existentials are not supported yet!
+        return Currency(0, "", "") 
+                       ^
+mojo: error: failed to parse the provided Mojo source module
