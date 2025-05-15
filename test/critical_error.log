@@ -1,0 +1,12 @@
+Critical error during test selection or worker initiation: TypeError: Worker.__init__() takes 3 positional arguments but 4 were given
+--- End of Critical Error Log Entry ---
+Critical error during test selection or worker initiation: TypeError: Worker.__init__() takes 3 positional arguments but 4 were given
+--- End of Critical Error Log Entry ---
+Critical error during test selection or worker initiation: TypeError: Worker.__init__() takes 3 positional arguments but 4 were given
+--- End of Critical Error Log Entry ---
+Critical error during test selection or worker initiation: TypeError: Worker.__init__() takes 3 positional arguments but 4 were given
+--- End of Critical Error Log Entry ---
+Critical error during test selection or worker initiation: TypeError: DOMNode.run_worker() got multiple values for argument 'name'
+--- End of Critical Error Log Entry ---
+Critical error during test selection or worker initiation: TypeError: DOMNode.run_worker() got multiple values for argument 'group'
+--- End of Critical Error Log Entry ---

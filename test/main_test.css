@@ -1,0 +1,178 @@
+/* Styling for the QuasarQuant Test Suite UI */
+
+/* General App Styling */
+Screen {
+    /* layout: vertical; */
+}
+
+/* Base styling */
+* {
+    transition: background 500ms in_out_cubic, color 500ms in_out_cubic;
+}
+
+/* Header styling */
+Header {
+    dock: top;
+    content-align: center middle;
+    background: $panel;
+}
+
+/* Footer styling */
+Footer {
+    background: $panel;
+    color: $text;
+}
+
+/* Test Explorer Panel */
+#test-explorer-panel {
+    width: 30%;
+    min-width: 20;
+    height: 1fr;
+    overflow: auto;
+    dock: left;
+    border-right: solid $primary-background-lighten-2;
+}
+
+/* Tree widget styling */
+Tree {
+    padding: 1;
+    background: $panel;
+    border: none;
+    width: 100%;
+    height: 100%;
+    scrollbar-color: $accent;
+}
+
+.tree--guide-line {
+    color: $primary-background-lighten-2;
+}
+
+.tree--highlight {
+    background: $accent-darken-2;
+}
+
+/* Main Area for Content */
+#main-area {
+    width: 1fr;
+    height: 1fr;
+    overflow: auto;
+}
+
+/* Test Output Panel */
+#main-content-panel {
+    width: 100%;
+    height: 1fr;
+    overflow: hidden;
+}
+
+/* Placeholder for when no test is selected */
+#output-placeholder {
+    width: 100%;
+    height: 100%;
+    padding: 1 2;
+}
+
+/* Container for output details */
+#output-details {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Styling for output and error content */
+#output-content, #error-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/* DataTable Styling */
+DataTable {
+    height: auto;
+    width: 100%;
+}
+
+/* Dialog styling */
+.dialog_container {
+    width: 60%;
+    height: auto;
+    border: heavy $warning;
+    background: $surface;
+    padding: 1 2;
+    margin: 1 2;
+}
+
+.dialog_title {
+    text-align: center;
+    text-style: bold;
+    background: $warning-darken-1;
+    color: $text;
+    width: 100%;
+    padding: 1 2;
+}
+
+.dialog_message {
+    margin: 2 0;
+    max-height: 16;
+    min-height: 4;
+    overflow-y: auto;
+}
+
+.dialog_icon {
+    text-align: center;
+    color: $warning;
+}
+
+/* Style tree nodes */
+.tree--label {
+    color: $text;
+}
+
+.tree--label-highlight {
+    text-style: bold;
+    color: $accent;
+}
+
+/* Use simple styling for categories and scripts */
+/* These will be styled through Python code instead */
+
+/* Test selection highlight */
+.test-selected {
+    background: $success-darken-1;
+    color: $text;
+    text-style: bold;
+}
+
+/* Output panel styling */
+#output-loading { /* This widget is currently removed from Python */
+    display: block;
+    margin: 1;
+    height: 3;
+    color: $success;
+}
+
+/* ErrorScreen Dialog Styling - Minimal */
+ErrorScreen {
+    align: center middle;
+}
+
+ErrorScreen Button {
+    width: 100%;
+    margin-top: 1;
+}
+
+TestOutputPanel { /* This is the same as #main-content-panel if IDs are unique */
+    height: 100%;
+    padding: 1;
+}
+
+/* Add custom styling for the DataTable */
+DataTable {
+    height: auto;
+    width: 100%;
+}
+
+/* Debug text styling - can be removed later */
+/* #panel-debug-text { */
+/* layer: top; */
+/* } */ 

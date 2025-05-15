@@ -1,0 +1,82 @@
+
+Test 1: Direct lookup
+--------------------------------
+Input:
+  Source Currency: EUR
+  Target Currency: USD
+  Rate to add: 1.085
+
+Results:
+  C++ output: EUR/USD = 1.085000
+--------------------------------
+
+Test 2: Inverse lookup
+--------------------------------
+Input:
+  Source Currency: USD
+  Target Currency: EUR
+
+Results:
+  C++ output: EUR/USD = 1.085000
+--------------------------------
+
+Test 3: Triangulation
+--------------------------------
+Input:
+  Source Currency: EUR
+  Target Currency: JPY
+  Rate to add: 148.500000
+
+Results:
+  C++ output: EUR/JPY = 161.122500
+--------------------------------
+
+Test 4: Smart lookup with multiple paths
+--------------------------------
+Input:
+  Source Currency: EUR
+  Target Currency: JPY
+
+Results:
+  C++ output: EUR/JPY = 148.342500
+--------------------------------
+
+Test 5: Obsoleted currency conversion
+--------------------------------
+Input:
+  Source Currency: EUR
+  Target Currency: DEM
+
+Results:
+  C++ output: EUR/DEM = 1.955830
+--------------------------------
+
+Test 6: Clear and reinitialize
+--------------------------------
+Input:
+  Source Currency: EUR
+  Target Currency: DEM
+
+Results:
+  C++ output: EUR/DEM = 1.955830
+--------------------------------
+
+Test 7: Invalid date
+--------------------------------
+Input:
+  Source Currency: EUR
+  Target Currency: DEM
+
+Results:
+  C++ output: No rate available (Error: no direct conversion available from EUR to DEM for January 1st, 1998)
+--------------------------------
+
+Test 8: Non-existent rate
+--------------------------------
+Input:
+  Source Currency: EUR
+  Target Currency: AUD
+
+Results:
+  C++ output: No rate available (Error: no conversion available from EUR to AUD for January 1st, 2024)
+--------------------------------

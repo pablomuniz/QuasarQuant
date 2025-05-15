@@ -1,0 +1,99 @@
+--- cpp_output.txt	2025-05-13 14:20:33.489103486 +0000
++++ mojo_output.txt	2025-05-13 14:20:36.384655721 +0000
+@@ -7,7 +7,9 @@
+   Rate to add: 1.085
+ 
+ Results:
+-  C++ output: EUR/USD = 1.085000
++  Mojo output: EUR / USD  =  1.085
++  C++ output: No rate available
++  Status: FAIL (one returned rate, other didn't)
+ --------------------------------
+ 
+ Test 2: Inverse lookup
+@@ -17,7 +19,9 @@
+   Target Currency: EUR
+ 
+ Results:
+-  C++ output: EUR/USD = 1.085000
++  Mojo output: EUR / USD  =  1.085
++  C++ output: No rate available
++  Status: FAIL (one returned rate, other didn't)
+ --------------------------------
+ 
+ Test 3: Triangulation
+@@ -25,10 +29,13 @@
+ Input:
+   Source Currency: EUR
+   Target Currency: JPY
+-  Rate to add: 148.500000
++  Rate to add: 148.5
++No conversion path available from EUR to JPY for Monday, 1 January 2024
+ 
+ Results:
+-  C++ output: EUR/JPY = 161.122500
++  Mojo output: No rate available
++  C++ output: No rate available
++  Status: PASS (both returned no rate)
+ --------------------------------
+ 
+ Test 4: Smart lookup with multiple paths
+@@ -36,9 +43,12 @@
+ Input:
+   Source Currency: EUR
+   Target Currency: JPY
++No conversion path available from EUR to JPY for Monday, 1 January 2024
+ 
+ Results:
+-  C++ output: EUR/JPY = 148.342500
++  Mojo output: No rate available
++  C++ output: No rate available
++  Status: PASS (both returned no rate)
+ --------------------------------
+ 
+ Test 5: Obsoleted currency conversion
+@@ -48,7 +58,9 @@
+   Target Currency: DEM
+ 
+ Results:
+-  C++ output: EUR/DEM = 1.955830
++  Mojo output: EUR / DEM  =  1.95583
++  C++ output: No rate available
++  Status: FAIL (one returned rate, other didn't)
+ --------------------------------
+ 
+ Test 6: Clear and reinitialize
+@@ -58,7 +70,9 @@
+   Target Currency: DEM
+ 
+ Results:
+-  C++ output: EUR/DEM = 1.955830
++  Mojo output: EUR / DEM  =  1.95583
++  C++ output: No rate available
++  Status: FAIL (one returned rate, other didn't)
+ --------------------------------
+ 
+ Test 7: Invalid date
+@@ -68,7 +82,9 @@
+   Target Currency: DEM
+ 
+ Results:
+-  C++ output: No rate available (Error: no direct conversion available from EUR to DEM for January 1st, 1998)
++  Mojo output: EUR / DEM  =  1.95583
++  C++ output: No rate available
++  Status: FAIL (one returned rate, other didn't)
+ --------------------------------
+ 
+ Test 8: Non-existent rate
+@@ -76,7 +92,10 @@
+ Input:
+   Source Currency: EUR
+   Target Currency: AUD
++No conversion path available from EUR to AUD for Monday, 1 January 2024
+ 
+ Results:
+-  C++ output: No rate available (Error: no conversion available from EUR to AUD for January 1st, 2024)
++  Mojo output: No rate available
++  C++ output: No rate available
++  Status: PASS (both returned no rate)
+ --------------------------------

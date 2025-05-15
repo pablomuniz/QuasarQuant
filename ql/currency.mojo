@@ -22,7 +22,7 @@ struct Currency:
         self.fraction_symbol = ""
         self.fractions_per_unit = 0
         self.triangulation_currency = ""
-        self.rounding = Rounding(0, RoundingType.RT_NONE)
+        self.rounding = Rounding()
 
     fn __init__(out self, name: String, code: String, numeric_code: Int, symbol: String, 
                 fraction_symbol: String, fractions_per_unit: Int, rounding: Rounding,
@@ -47,7 +47,7 @@ struct Currency:
         self.fraction_symbol = ""
         self.fractions_per_unit = 0
         self.triangulation_currency = ""
-        self.rounding = Rounding(0, RoundingType.RT_NONE)
+        self.rounding = Rounding()
     
     fn is_empty(self) -> Bool:
         """Checks if this is an empty/invalid currency"""

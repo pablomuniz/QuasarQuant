@@ -2,12 +2,12 @@
 
 from quantfork.ql.time.date import Date, January, July, December, February, May, August, September, October, November # Import month constants
 from quantfork.ql.currencies.europe import *
-from quantfork.ql.currencies.america import PENCurrency, USDCurrency, CADCurrency
+from quantfork.ql.currencies.america import *
 from quantfork.ql.currencies.asia import JPYCurrency
 from quantfork.ql.currencies.oceania import AUDCurrency
 from sys import exit as sys_exit, argv as sys_argv # Import exit and argv
 from quantfork.ql.currency import Currency
-from builtin.math import min, max  # Correct import path for min/max functions
+from builtin.math import min, max
 
 # Import Dictionary for rate map
 from collections.dict import Dict
@@ -46,7 +46,7 @@ struct ExchangeRateManager:
     fn add_rate(mut self, source: Currency, target: Currency, rate: Float64) raises:
         var hash_val = self.get_hash(source, target)
         var max_date = Date.maxDate()
-        #todo check if minDate is correct applying it here
+        #TODO: check if minDate is correct applying it here
         var exchange_rate = ExchangeRate(source, target, rate, Date.minDate(), max_date)
         
         # Initialize list for this hash if needed
@@ -69,7 +69,7 @@ struct ExchangeRateManager:
             return None
             
         # We need to iterate carefully over the exchange rates and check each one
-        # todo check cpp implementation
+        # TODO: check cpp implementation
         var rates_list = self.rate_map[hash_val]
         for i in range(len(rates_list)):
             var rate = rates_list[i]
@@ -81,21 +81,22 @@ struct ExchangeRateManager:
                 return 1.0 / rate.rate
                 
         return None
-    #todo type should be a enum, not present in mojo at the moment
+    #TODO: type should be a enum, not present in mojo at the moment
     fn lookup(self, source: Currency, target: Currency, date: Date = Date(), type: String = "Derived") raises -> Optional[ExchangeRate]:
         """
         Look up the exchange rate between two currencies at a given date.
         
-        Parameters:
-            source: The source currency
-            target: The target currency
-            date: The date for which the rate is requested (defaults to current date if not specified)
-            type: Type of lookup - "Direct" for direct rates only, "Derived" to allow derived rates
-            
+        Args:
+                source: The source currency.
+                target: The target currency.
+                date: The date for which the rate is requested (defaults to current date if not specified).
+                type: Type of lookup - "Direct" for direct rates only, "Derived" to allow derived rates.
+        
         Returns:
-            Optional[ExchangeRate]: The found exchange rate or None if not available
-            
-        Note: This function may raise exceptions when accessing the rate_map.
+                Optional[ExchangeRate]: The found exchange rate or None if not available.
+        
+        Note: 
+            - This function may raise exceptions when accessing the rate_map.
         """
         # If same currency, return rate of 1.0
         if source.code == target.code:
@@ -106,6 +107,7 @@ struct ExchangeRateManager:
         if lookup_date == Date():
             # In C++ this would use Settings::instance().evaluationDate()
             # For now we'll use the default date since we don't have todaysDate()
+            # Todo Fix this
             lookup_date = Date(1, January, 2023)  # Use a fixed date instead of todaysDate()
         
         # For direct lookups only, just call direct_lookup
@@ -153,8 +155,8 @@ struct ExchangeRateManager:
                 else:
                     return None
         
-        # As a last resort, try smart lookup
-        return self.smart_lookup(source, target, lookup_date)
+        # As a last resort, try smart lookup with an empty forbidden list
+        return self.smart_lookup(source, target, lookup_date, List[Int]())
         
     fn direct_lookup(self, source: Currency, target: Currency, date: Date) raises -> Optional[ExchangeRate]:
         """
@@ -201,7 +203,7 @@ struct ExchangeRateManager:
         
     fn add_known_rates(mut self) raises:
         """
-        Add standard known exchange rates for obsoleted currencies
+        Add standard known exchange rates for obsoleted currencies.
         """
         # Add EUR conversion rates for obsoleted currencies
         var max_date = Date.maxDate()
@@ -226,13 +228,133 @@ struct ExchangeRateManager:
         self.add_rate(PENCurrency, PEICurrency, 1000000.0)
         self.add_rate(PEICurrency, PEHCurrency, 1000.0)
 
-    fn smart_lookup(self, source: Currency, target: Currency, date: Date) raises -> Optional[ExchangeRate]:
+    fn hashes(self, hash_val: Int, currency: Currency) -> Bool:
+        """
+        Check if a currency is part of a hash value.
+        
+        Args:
+            hash_val: The hash value to check.
+            currency: The currency to look for.
+        
+        Returns:
+            Bool: True if the currency is part of the hash, False otherwise.
+        """
+        return currency.numeric_code == hash_val % 1000 or currency.numeric_code == hash_val // 1000
+        
+    fn is_in_list(self, list: List[Int], value: Int) -> Bool:
+        """
+        Check if a value is in a list.
+        
+        Args:
+            list: The list to search in.
+            value: The value to look for.
+        
+        Returns:
+            Bool: True if the value is in the list, False otherwise.
+        """
+        for i in range(len(list)):
+            if list[i] == value:
+                return True
+        return False
+
+    @staticmethod
+    @always_inline
+    fn chain_rates(head: ExchangeRate, tail: ExchangeRate) -> ExchangeRate:
+        """
+        Chain two exchange rates together to create a new rate.
+        Static method that can be used without an instance of ExchangeRateManager.
+        
+        Args:
+            head: The first rate in the chain.
+            tail: The second rate in the chain.
+        
+        Returns:
+            ExchangeRate: The chained rate.
+        """
+        # Calculate the chained rate
+        var chained_rate = head.rate * tail.rate
+        
+        # Use the source from the head and target from the tail
+        var source = Currency(head.source)
+        var target = Currency(tail.target)
+        
+        # Use the intersection of the validity periods
+        var start_date = max(head.start_date, tail.start_date)
+        var end_date = min(head.end_date, tail.end_date)
+        
+        return ExchangeRate(source, target, chained_rate, start_date, end_date)
+
+    fn smart_lookup(self, source: Currency, target: Currency, date: Date, forbidden: Optional[List[Int]] = None) raises -> Optional[ExchangeRate]:
         """
         Try to find a chain of exchange rates to connect source and target currencies.
-        This is a placeholder implementation. The full version requires a recursive graph search.
+        Uses a recursive search with cycle detection to find a valid path.
         
-        Note: This function may raise exceptions when accessing the rate_map.
+        Args:
+                source: The source currency.
+                target: The target currency.
+                date: The date for which the rate is requested.
+                forbidden: Optional list of currency numeric codes that have been visited (to prevent cycles).
+        
+        Returns:
+                Optional[ExchangeRate]: The found exchange rate chain or None if not found.
+        
+        Note: 
+                - This function may raise exceptions when accessing the rate_map.
         """
-        # For now, just return None since we don't have a full implementation
-        print("Warning: smart_lookup not fully implemented yet")
+        # First try direct lookup
+        var direct_rate = self.fetch(source, target, date)
+        if direct_rate is not None:
+            return direct_rate
+            
+        # Initialize or use existing forbidden list
+        var forbidden_list = List[Int]()
+        if forbidden:
+            forbidden_list = forbidden.value()
+        else:
+            forbidden_list = List[Int]()
+            
+        # Add source currency to forbidden list to prevent cycles
+        forbidden_list.append(source.numeric_code)
+        
+        # Iterate through all rates in the map
+        for hash_val_ptr in self.rate_map:
+            var hash_val = hash_val_ptr[]
+            # Check if this hash involves our source currency
+            if self.hashes(hash_val, source):
+                var rates_list = self.rate_map[hash_val]
+                if len(rates_list) > 0:
+                    # Get the first rate in the list
+                    var first_rate = rates_list[0]
+                    
+                    # Determine the other currency in this rate
+                    var other_currency: Currency
+                    if first_rate.source == source.code:
+                        other_currency = Currency(first_rate.target)
+                    else:
+                        other_currency = Currency(first_rate.source)
+                        
+                    # Check if the other currency is not forbidden
+                    if not self.is_in_list(forbidden_list, other_currency.numeric_code):
+                        # Try to get a rate from source to other currency
+                        var head_rate = self.fetch(source, other_currency, date)
+                        if head_rate:
+                            # Recursively try to get from other currency to target
+                            var tail_rate = self.smart_lookup(other_currency, target, date, forbidden_list)
+                            if tail_rate is not None:
+                                # Chain the rates together using static method
+                                return ExchangeRateManager.chain_rates(head_rate.value(), tail_rate.value())
+        
+        # If we get here, no valid path was found
+        print("No conversion path available from", source.code, "to", target.code, "for", date.toString())
         return None
+
+    fn clear(mut self) raises:
+        """
+        Clear all exchange rates and reinitialize with known rates.
+        This matches the C++ implementation's clear() method.
+        """
+        self.rate_map.clear()
+        #TODO: maybe we should change the next line.
+        # I really dont like that clear() also adds rates.
+        # Solution might be to change the name to reset()
+        self.add_known_rates()

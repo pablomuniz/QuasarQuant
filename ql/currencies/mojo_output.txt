@@ -1,0 +1,10 @@
+
+Test 1: Direct lookup
+--------------------------------
+Input:
+  Source Currency: EUR
+  Target Currency: USD
+  Rate to add: 1.085
+
+Results:
+  Mojo output: Unhandled exception caught during execution: Index :.6f not in kwargs

@@ -4,6 +4,7 @@ from quantfork.ql.currency import Currency
 #add conversion type to match money.hpp
 #as we dont have enums in mojo yet, we will constants
 #todo this program is far from complete, we need to finish the exchange rate manager
+from quantfork.ql.currencies.exchangeratemanager import ExchangeRateManager
 
 struct ConversionType:
     var NOCONVERSION = 0

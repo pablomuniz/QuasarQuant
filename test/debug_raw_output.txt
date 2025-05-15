@@ -1,0 +1,42 @@
+Running test pepe (Python version)...
+Compiling test code (Python version)...
+Compilation successful (Python version)!
+TEST_ITEM_ID: test-pepe-py-001
+DESCRIPTION: Simple Python test for cash flow calculations
+OVERALL_STATUS: PASS
+CPP_EXIT_CODE: 0
+MOJO_EXIT_CODE: 0
+CPP_STDOUT_BEGIN
+Python Cash flow value: 100.00
+Python Interest rate: 0.05
+Python NPV: 95.24
+CPP_STDOUT_END
+MOJO_STDOUT_BEGIN
+Python Cash flow value: 100.00
+Python Interest rate: 0.05
+Python NPV: 95.24
+MOJO_STDOUT_END
+END_OF_TEST_ITEM
+TEST_ITEM_ID: test-pepe-py-002
+DESCRIPTION: Complex Python test with multiple flows
+OVERALL_STATUS: FAIL
+FAIL_REASON: Python Numerical discrepancy between C++ and Mojo
+CPP_EXIT_CODE: 0
+MOJO_EXIT_CODE: 0
+CPP_STDOUT_BEGIN
+Python Cash flow sequence: [100, 150, 200]
+Python Interest rate: 0.06
+Python NPV: 398.67
+CPP_STDOUT_END
+MOJO_STDOUT_BEGIN
+Python Cash flow sequence: [100, 150, 200]
+Python Interest rate: 0.06
+Python NPV: 398.68
+MOJO_STDOUT_END
+END_OF_TEST_ITEM
+RUN_SCRIPT_SUMMARY_BEGIN
+Python Tests completed: 2
+Python Tests passed: 1
+Python Tests failed: 1
+Python Execution time: 0.2s
+RUN_SCRIPT_SUMMARY_END

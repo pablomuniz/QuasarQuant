@@ -2,6 +2,7 @@
 
 from quantfork.ql.currency import Currency
 from quantfork.ql.money import Money
+from quantfork.ql.currencies.exchangeratemanager import ExchangeRateManager
 from collections.optional import Optional
 
 # Constants for exchange rate types
@@ -119,20 +120,6 @@ struct ExchangeRate:
             print("Error: Unknown exchange rate type")
             return Money(0.0, Currency(currency_code))
     
-    # Static method to chain two exchange rates together
-    @staticmethod
-    fn chain(r1: ExchangeRate, r2: ExchangeRate) -> ExchangeRate:
-        """
-        Create a new exchange rate by chaining two exchange rates together.
-        
-        Parameters:
-        - r1: First exchange rate
-        - r2: Second exchange rate
-        
-        Returns:
-        - A new ExchangeRate representing the chained conversion
-        """
-        return ExchangeRate(r1, r2)  # Uses the derived constructor
 
 # Note: The original C++ implementation includes a Money class that represents
 # an amount in a specific currency. We're using (Float, String) tuples instead.
