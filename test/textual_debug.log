@@ -1,1553 +1,403 @@
 Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout. Current placeholder visible: True, details visible: False
-Raw output displayed successfully
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout. Current placeholder visible: True, details visible: False
-Raw output displayed successfully with new widget id=output-content, visible=True
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout. Current placeholder visible: True, details visible: False
-Raw output displayed successfully with new widget id=output-content, visible=True
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout. Current placeholder visible: True, details visible: False
-Raw output displayed successfully with new widget id=output-content
-Scrolling output to top
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display initiated
-Scrolled output to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display initiated
-Scrolled output to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Content of raw_stdout written to debug_raw_output.txt
-Raw output display initiated
-Scrolled output to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Content of raw_stdout written to debug_raw_output.txt
-Raw output display initiated
-Scrolled output to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Content of raw_stdout written to debug_raw_output.txt
-Raw output display initiated
-Scrolled output-content and TestOutputPanel to top position
-Running in Docker: True\nScript dir: /app/quantfork/test\nProject root: /app/quantfork\nQL dir: /app/quantfork/ql\nDiscovering tests (including .py scripts)...\nChecking category: models\nChecking category: processes\nChecking category: cashflows\n  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh\n  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py\nChecking category: quotes\nChecking category: currencies\n  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh\nChecking category: instruments\nChecking category: pricingengines\nChecking category: legacy\nChecking category: termstructures\nChecking category: math\nChecking category: experimental\nChecking category: patterns\nChecking category: utilities\nChecking category: methods\nChecking category: time\nChecking category: indexes\nDiscovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}\nTree populated.\nRunning in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display initiated
-Scrolled output to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display initiated
-Scrolled output to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display initiated
-Scrolled output to top position
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.sh' with worker name 'test_runner_run_testpepe.sh'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-Identified non-Python script. Command: ['/app/quantfork/ql/cashflows/tests/run_testpepe.sh']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.sh completed with exit code: 0. Output length: 922
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.sh: Test completed. Raw output length: 922.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.sh finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-Attempting to show raw stdout with length 922
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display with ScrollableContainer completed
-Scrolled output_scroll_container to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display with ScrollableContainer completed
-Scrolled output_scroll_container to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display with ScrollableContainer completed
-Scrolled output_scroll_container to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display direct to #output-details (blue) completed
-Scrolled #output-details (blue) to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display direct to #output-details (blue) completed
-Scrolled #output-details (blue) to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted. Placeholder visible, details hidden.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display direct to #output-details (blue) completed
-Scrolled #output-details (blue) to top position
-Running in Docker: True
-Script dir: /app/quantfork/test
-Project root: /app/quantfork
-QL dir: /app/quantfork/ql
-Discovering tests (including .py scripts)...
-Checking category: models
-Checking category: processes
-Checking category: cashflows
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.sh
-  Found executable script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Checking category: quotes
-Checking category: currencies
-  Found executable script: /app/quantfork/ql/currencies/tests/run_europe_tests.sh
-Checking category: instruments
-Checking category: pricingengines
-Checking category: legacy
-Checking category: termstructures
-Checking category: math
-Checking category: experimental
-Checking category: patterns
-Checking category: utilities
-Checking category: methods
-Checking category: time
-Checking category: indexes
-Discovered categories and tests: {'cashflows': [PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.py'), PosixPath('/app/quantfork/ql/cashflows/tests/run_testpepe.sh')], 'currencies': [PosixPath('/app/quantfork/ql/currencies/tests/run_europe_tests.sh')]}
-Tree populated.
-TestOutputPanel mounted with simplified structure.
-TestExplorer: Selected script /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Attempting to call app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: Entered for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-MainTest.execute_test_script_via_handler: self is <class '__main__.MainTest'>
-MainTest.execute_test_script_via_handler: Preparing to call self.run_worker (assuming even older signature with positional name AND group).
-MainTest.execute_test_script_via_handler: self.run_worker called for '/app/quantfork/ql/cashflows/tests/run_testpepe.py' with worker name 'test_runner_run_testpepe.py'.
-MainTest.execute_test_script_via_handler: Exiting for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-TestExplorer: Successfully called app.test_selected_handler for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: Starting for script: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Worker _run_test_and_post_message: type(self) is <class '__main__.MainTest'>
-_execute_test_script_raw: Preparing to execute: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Identified Python script. Command: ['python', '/app/quantfork/ql/cashflows/tests/run_testpepe.py']
-_execute_test_script_raw: Script /app/quantfork/ql/cashflows/tests/run_testpepe.py completed with exit code: 0. Output length: 1112
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py: Test completed. Raw output length: 1112.
-Worker for /app/quantfork/ql/cashflows/tests/run_testpepe.py finished and posted message.
-on_test_execution_result received for: /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Displaying raw_stdout from TestExecutionResult for /app/quantfork/ql/cashflows/tests/run_testpepe.py
-Attempting to show raw stdout with length 1112
-Raw output display direct to #output-details (blue) completed
-Scrolled #output-details (blue) to top position
+Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
+Discovering tests...
+Test discovery complete. Categories found: 1
+TestOutputPanel mounted with RichLog for output.
+TestOutputPanel: TCP Socket created. Attempting to bind to 0.0.0.0:43567...
+TestOutputPanel: TCP Socket successfully bound to 0.0.0.0:43567.
+TestOutputPanel: TCP Socket is now listening on 0.0.0.0:43567 with backlog 5.
+TestOutputPanel: TCP Socket listener thread started for 0.0.0.0:43567.
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestExplorer: Script selected: europe_currencies_test.py
+MainTest: Executing script: europe_currencies_test.py
+TestOutputPanel: Prepared for live output (log cleared).
+Worker (europe_currencies_test.py): Starting execution.
+_execute_test_script_raw (europe_currencies_test.py): Preparing to execute for streaming...
+_execute_test_script_raw (europe_currencies_test.py): Running as pytest with plugin: /app/quantfork/test/pytest_tui_plugin.py
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] pytest_configure: Registering TUI reporter plugin
+TestOutputPanel: TCP Socket connection accepted from ('127.0.0.1', 54208)
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Running in Docker: True
+TestOutputPanel: Socket details - Local: ('127.0.0.1', 43567), Remote: ('127.0.0.1', 54208)
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Current working directory: /app/quantfork/test
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] TUIReportPlugin: Will try connecting to these hosts: ['127.0.0.1', 'localhost', '0.0.0.0']
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] TUIReportPlugin: Initializing connection attempts...
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Trying to connect to 127.0.0.1:43567...
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Connection attempt 1/3 to 127.0.0.1:43567...
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] _setup_connection: Attempting to connect to 127.0.0.1:43567 with timeout 1s...
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] _setup_connection: Connection to 127.0.0.1:43567 SUCCEEDED.
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Successfully connected to 127.0.0.1:43567
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] TUIReportPlugin: Successfully connected to TUI socket at 127.0.0.1:43567.
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] pytest_configure: Plugin registration complete
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] pytest_configure: compilation_status hook is now available
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Loaded plugins: ['127464192175920', 'pytestconfig', 'mark', 'main', 'runner', 'fixtures', 'helpconfig', 'python', 'terminal', 'debugging', 'unittest', 'capture', 'skipping', 'legacypath', 'tmpdir', 'monkeypatch', 'recwarn', 'pastebin', 'assertion', 'junitxml', 'doctest', 'cacheprovider', 'freeze_support', 'setuponly', 'setupplan', 'stepwise', 'warnings', 'logging', 'reports', 'python_path', 'unraisableexception', 'threadexception', 'faulthandler', 'pytest_tui_plugin', 'capturemanager', 'session', 'lfplugin', 'nfplugin', 'tui_reporter']
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: ============================= test session starts ==============================
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: platform linux -- Python 3.12.10, pytest-8.3.5, pluggy-1.6.0 -- /app/mojo-project-env/ql_mojoproj/.magic/envs/default/bin/python
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: cachedir: .pytest_cache
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: rootdir: /app/quantfork
+TestOutputPanel: Raw data received on socket: {"type": "session_start", "timestamp": 1747675451.451362, "data": {"test_count": 41, "start_time": 1747675451.4513595}}
+...
+TestOutputPanel: Handling socket message (JSON string): {"type": "session_start", "timestamp": 1747675451.451362, "data": {"test_count": 41, "start_time": 1747675451.4513595}}...
+TestOutputPanel: Parsed socket message_type: 'session_start', data keys: ['test_count', 'start_time']
+TestOutputPanel: Prepared for live output (log cleared).
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PROTOCOL DEBUG] Found test_data in params for ql/currencies/tests/europe_currencies_test.py::test_currency[europe_currency_BGL]: {'id': 'europe_currency_BGL', 'description': 'Test for European currency BGL', 'currency_code': 'BGL'}
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: collecting ... collected 41 items
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: 
+TestOutputPanel: Raw data received on socket: {"type": "test_start", "timestamp": 1747675451.4521737, "data": {"id": "europe_currency_BGL", "description": "Test for European currency BGL"}}
+{"type": "compilation_status", "timestamp": 1747675451.4...
+TestOutputPanel: Handling socket message (JSON string): {"type": "test_start", "timestamp": 1747675451.4521737, "data": {"id": "europe_currency_BGL", "description": "Test for European currency BGL"}}...
+TestOutputPanel: Parsed socket message_type: 'test_start', data keys: ['id', 'description']
+Starting test: europe_currency_BGL ('Test for European currency BGL')
+Current collected_data keys: ['europe_currency_BGL']
+TestOutputPanel: Handling socket message (JSON string): {"type": "compilation_status", "timestamp": 1747675451.4523642, "data": {"phase": "cpp_start", "info": "Europe Currency Tests"}}...
+TestOutputPanel: Parsed socket message_type: 'compilation_status', data keys: ['phase', 'info']
+Compilation status received: cpp_start - Europe Currency Tests
+Calling UI update for compilation status: cpp_start - Europe Currency Tests
+TestOutputPanel: Raw data received on socket: {"type": "compilation_status", "timestamp": 1747675461.2878237, "data": {"phase": "cpp_end", "info": "success"}}
+...
+TestOutputPanel: Handling socket message (JSON string): {"type": "compilation_status", "timestamp": 1747675461.2878237, "data": {"phase": "cpp_end", "info": "success"}}...
+TestOutputPanel: Parsed socket message_type: 'compilation_status', data keys: ['phase', 'info']
+Compilation status received: cpp_end - success
+Calling UI update for compilation status: cpp_end - success
+TestOutputPanel: Raw data received on socket: {"type": "compilation_status", "timestamp": 1747675461.2879431, "data": {"phase": "mojo_start", "info": "Europe Currency Tests"}}
+...
+TestOutputPanel: Handling socket message (JSON string): {"type": "compilation_status", "timestamp": 1747675461.2879431, "data": {"phase": "mojo_start", "info": "Europe Currency Tests"}}...
+TestOutputPanel: Parsed socket message_type: 'compilation_status', data keys: ['phase', 'info']
+Compilation status received: mojo_start - Europe Currency Tests
+Calling UI update for compilation status: mojo_start - Europe Currency Tests
+TestOutputPanel: Raw data received on socket: {"type": "compilation_status", "timestamp": 1747675461.742829, "data": {"phase": "mojo_end", "info": "success"}}
+...
+TestOutputPanel: Handling socket message (JSON string): {"type": "compilation_status", "timestamp": 1747675461.742829, "data": {"phase": "mojo_end", "info": "success"}}...
+TestOutputPanel: Parsed socket message_type: 'compilation_status', data keys: ['phase', 'info']
+Compilation status received: mojo_end - success
+Calling UI update for compilation status: mojo_end - success
+TestOutputPanel: Raw data received on socket: {"type": "test_inputs", "timestamp": 1747675461.7680304, "data": {"id": "europe_currency_BGL", "inputs": {}}}
+...
+TestOutputPanel: Handling socket message (JSON string): {"type": "test_inputs", "timestamp": 1747675461.7680304, "data": {"id": "europe_currency_BGL", "inputs": {}}}...
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: ../ql/currencies/tests/europe_currencies_test.py::test_currency[europe_currency_BGL] PASSED [  2%]
+TestOutputPanel: Parsed socket message_type: 'test_inputs', data keys: ['id', 'inputs']
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR> Traceback (most recent call last):
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/main.py", line 283, in wrap_session
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     session.exitstatus = doit(config, session) or 0
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>                          ^^^^^^^^^^^^^^^^^^^^^
+Received inputs for europe_currency_BGL: {}
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/main.py", line 337, in _main
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     config.hook.pytest_runtestloop(session=session)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+Processed inputs for europe_currency_BGL: []
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+TestOutputPanel: Raw data received on socket: {"type": "test_outputs", "timestamp": 1747675461.7681463, "data": {"id": "europe_currency_BGL", "cpp_output": "", "mojo_output": ""}}
+...
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+TestOutputPanel: Handling socket message (JSON string): {"type": "test_outputs", "timestamp": 1747675461.7681463, "data": {"id": "europe_currency_BGL", "cpp_output": "", "mojo_output": ""}}...
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TestOutputPanel: Parsed socket message_type: 'test_outputs', data keys: ['id', 'cpp_output', 'mojo_output']
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     raise exception
+Stored outputs for europe_currency_BGL: CPP: '', Mojo: ''
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/logging.py", line 803, in pytest_runtestloop
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return (yield)  # Run all the tests.
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>             ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/terminal.py", line 673, in pytest_runtestloop
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     result = yield
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>              ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     res = hook_impl.function(*args)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>           ^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/main.py", line 362, in pytest_runtestloop
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     raise exception
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/warnings.py", line 112, in pytest_runtest_protocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return (yield)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>             ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/assertion/__init__.py", line 176, in pytest_runtest_protocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return (yield)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>             ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 53, in run_old_style_hookwrapper
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return result.get_result()
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_result.py", line 103, in get_result
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     raise exc.with_traceback(tb)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 38, in run_old_style_hookwrapper
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     res = yield
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>           ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/unittest.py", line 429, in pytest_runtest_protocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     res = yield
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>           ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/faulthandler.py", line 88, in pytest_runtest_protocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return (yield)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>             ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     res = hook_impl.function(*args)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>           ^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/runner.py", line 113, in pytest_runtest_protocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     runtestprotocol(item, nextitem=nextitem)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/runner.py", line 132, in runtestprotocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     reports.append(call_and_report(item, "call", log))
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/runner.py", line 246, in call_and_report
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     ihook.pytest_runtest_logreport(report=report)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     raise exception
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     res = hook_impl.function(*args)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>           ^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/quantfork/test/pytest_tui_plugin.py", line 443, in pytest_runtest_logreport
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     if hasattr(report.node, "detailed_diffs_data"):
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>                ^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR> AttributeError: 'TestReport' object has no attribute 'node'
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: 
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: ======================== 1 passed, 1 warning in 10.36s =========================
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Processing test report for ql/currencies/tests/europe_currencies_test.py::test_currency[europe_currency_BGL] (passed: True)
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Node data from store: {'inputs': {}, 'cpp_output': '', 'mojo_output': '', 'description': 'Test for European currency BGL'}
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Final inputs for ql/currencies/tests/europe_currencies_test.py::test_currency[europe_currency_BGL]: {} (type: <class 'dict'>)
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Final normalized inputs for europe_currency_BGL: {}
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PROTOCOL DEBUG] Final data for ql/currencies/tests/europe_currencies_test.py::test_currency[europe_currency_BGL] after run: {'inputs': {'Currency Code': 'BGL'}, 'cpp_output': 'Name: Bulgarian lev\nCode: BGL\nNumericCode: 100\nSymbol: lv\nFractionSymbol: \nFractionsPerUnit: 100\nRoundingType: None\nRoundingPrecision: 0\nRoundingDigit: 0\n', 'mojo_output': 'Name: Bulgarian lev\nCode: BGL\nNumericCode: 100\nSymbol: lv\nFractionSymbol: \nFractionsPerUnit: 100\nRoundingType: None\nRoundingPrecision: 0\nRoundingDigit: 0\n', 'description': 'Test for European currency BGL'}
+TestOutputPanel: Socket connection closed by pytest
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+_execute_test_script_raw (europe_currencies_test.py): Completed. Exit: 3, Full STDOUT len: 9067, Full STDERR len: 20
+Worker (europe_currencies_test.py): Test completed. Full output length: 9067.
+Worker (europe_currencies_test.py): Finished and posted message.
+MainTest: Received execution result for europe_currencies_test.py.
+MainTest (europe_currencies_test.py): In on_test_execution_result. output_panel.socket_data_received = True, output_panel.has_streamed_output = False
+MainTest (europe_currencies_test.py): Socket data was received. Display presumed handled by socket methods.
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: TCP Socket listener waiting for connection on 0.0.0.0:43567...
+TestOutputPanel: WARNING - TCP Socket listener thread did not terminate cleanly.
+TestOutputPanel: TCP Socket listener stopped for 0.0.0.0:43567.
 Running in Docker: True
 Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
 Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted with simplified structure.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Displaying raw output (1112 chars)...
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted with simplified structure.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Displaying content with prefix 'Raw STDOUT' (1112 chars)...
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted with simplified structure.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Displaying content with prefix 'Raw STDOUT' (1112 chars)...
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted with simplified structure.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Displaying content with prefix 'Raw STDOUT' (1112 chars)...
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted with simplified structure.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Displaying content with prefix 'Raw STDOUT' (1112 chars)...
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted with simplified structure.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Displaying content with prefix 'Raw STDOUT' (1112 chars)...
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted with simplified structure.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Displaying content with prefix 'Raw STDOUT' (1112 chars)...
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted with simplified structure.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Displaying content with prefix 'Raw STDOUT' (1112 chars)...
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted with simplified structure.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Displaying content with prefix 'Raw STDOUT' (1112 chars)...
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-TestExplorer: Script selected: run_europe_tests.sh
-MainTest: Executing script: run_europe_tests.sh
-Worker (run_europe_tests.sh): Starting execution.
-_execute_test_script_raw (run_europe_tests.sh): Preparing to execute...
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-TestExplorer: Script selected: run_testpepe.sh
-MainTest: Executing script: run_testpepe.sh
-Worker (run_testpepe.sh): Starting execution.
-_execute_test_script_raw (run_testpepe.sh): Preparing to execute...
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.sh): Completed. Exit: 0, Output len: 922.
-Worker (run_testpepe.sh): Test completed. Raw output length: 922.
-Worker (run_testpepe.sh): Finished and posted message.
-MainTest: Received execution result for run_testpepe.sh.
-MainTest: Displaying raw_stdout from test run_testpepe.sh...
-Updating display. Is script error: False, Content length: 922.
-TestExplorer: Script selected: run_testpepe.sh
-MainTest: Executing script: run_testpepe.sh
-Worker (run_testpepe.sh): Starting execution.
-_execute_test_script_raw (run_testpepe.sh): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.sh): Completed. Exit: 0, Output len: 922.
-Worker (run_testpepe.sh): Test completed. Raw output length: 922.
-Worker (run_testpepe.sh): Finished and posted message.
-MainTest: Received execution result for run_testpepe.sh.
-MainTest: Displaying raw_stdout from test run_testpepe.sh...
-Updating display. Is script error: False, Content length: 922.
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-TestExplorer: Script selected: run_testpepe.sh
-MainTest: Executing script: run_testpepe.sh
-Worker (run_testpepe.sh): Starting execution.
-_execute_test_script_raw (run_testpepe.sh): Preparing to execute...
-_execute_test_script_raw (run_testpepe.sh): Completed. Exit: 0, Output len: 922.
-Worker (run_testpepe.sh): Test completed. Raw output length: 922.
-Worker (run_testpepe.sh): Finished and posted message.
-MainTest: Received execution result for run_testpepe.sh.
-MainTest: Displaying raw_stdout from test run_testpepe.sh...
-Updating display. Is script error: False, Content length: 922.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-TestExplorer: Script selected: run_testpepe.sh
-MainTest: Executing script: run_testpepe.sh
-Worker (run_testpepe.sh): Starting execution.
-_execute_test_script_raw (run_testpepe.sh): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-_execute_test_script_raw (run_testpepe.sh): Completed. Exit: 0, Output len: 922.
-Worker (run_testpepe.sh): Test completed. Raw output length: 922.
-Worker (run_testpepe.sh): Finished and posted message.
-MainTest: Received execution result for run_testpepe.sh.
-MainTest: Displaying raw_stdout from test run_testpepe.sh...
-Updating display. Is script error: False, Content length: 922.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.py
-MainTest: Executing script: run_testpepe.py
-Worker (run_testpepe.py): Starting execution.
-_execute_test_script_raw (run_testpepe.py): Preparing to execute...
-_execute_test_script_raw (run_testpepe.py): Completed. Exit: 0, Output len: 1112.
-Worker (run_testpepe.py): Test completed. Raw output length: 1112.
-Worker (run_testpepe.py): Finished and posted message.
-MainTest: Received execution result for run_testpepe.py.
-MainTest: Displaying raw_stdout from test run_testpepe.py...
-Updating display. Is script error: False, Content length: 1112.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.sh
-MainTest: Executing script: run_testpepe.sh
-Worker (run_testpepe.sh): Starting execution.
-_execute_test_script_raw (run_testpepe.sh): Preparing to execute...
-_execute_test_script_raw (run_testpepe.sh): Completed. Exit: 0, Output len: 1078.
-Worker (run_testpepe.sh): Test completed. Raw output length: 1078.
-Worker (run_testpepe.sh): Finished and posted message.
-MainTest: Received execution result for run_testpepe.sh.
-MainTest: Displaying raw_stdout from test run_testpepe.sh...
-Updating display. Is script error: False, Content length: 1078.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.sh
-MainTest: Executing script: run_testpepe.sh
-Worker (run_testpepe.sh): Starting execution.
-_execute_test_script_raw (run_testpepe.sh): Preparing to execute...
-_execute_test_script_raw (run_testpepe.sh): Completed. Exit: 0, Output len: 1078.
-Worker (run_testpepe.sh): Test completed. Raw output length: 1078.
-Worker (run_testpepe.sh): Finished and posted message.
-MainTest: Received execution result for run_testpepe.sh.
-MainTest: Displaying raw_stdout from test run_testpepe.sh...
-Updating display. Is script error: False, Content length: 1078.
-Running in Docker: True
-Script dir: /app/quantfork/test, Project root: /app/quantfork, QL dir: /app/quantfork/ql
-Discovering tests...
-Test discovery complete. Categories found: 2
-TestOutputPanel mounted for structured test output.
-TestExplorer: Script selected: run_testpepe.sh
-MainTest: Executing script: run_testpepe.sh
-Worker (run_testpepe.sh): Starting execution.
-_execute_test_script_raw (run_testpepe.sh): Preparing to execute...
-_execute_test_script_raw (run_testpepe.sh): Completed. Exit: 0, Output len: 926.
-Worker (run_testpepe.sh): Test completed. Raw output length: 926.
-Worker (run_testpepe.sh): Finished and posted message.
-MainTest: Received execution result for run_testpepe.sh.
-MainTest: Displaying raw_stdout from test run_testpepe.sh...
-Updating display. Is script error: False, Content length: 926.
+Test discovery complete. Categories found: 1
+TestOutputPanel mounted with RichLog for output.
+TestOutputPanel: TCP Socket created. Attempting to bind to 0.0.0.0:43567...
+TestOutputPanel: TCP Socket successfully bound to 0.0.0.0:43567.
+TestOutputPanel: TCP Socket is now listening on 0.0.0.0:43567 with backlog 5.
+TestOutputPanel: TCP Socket listener thread started for 0.0.0.0:43567.
+TestOutputPanel: Listener thread started.
+TestExplorer: Script selected: europe_currencies_test.py
+MainTest: Executing script: europe_currencies_test.py
+TestOutputPanel: Prepared for live output (log cleared).
+Worker (europe_currencies_test.py): Starting execution.
+_execute_test_script_raw (europe_currencies_test.py): Preparing to execute for streaming...
+_execute_test_script_raw (europe_currencies_test.py): Running as pytest with plugin: /app/quantfork/test/pytest_tui_plugin.py
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] pytest_configure: Registering TUI reporter plugin
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Running in Docker: True
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Current working directory: /app/quantfork/test
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] TUIReportPlugin: Will try connecting to these hosts: ['127.0.0.1', 'localhost', '0.0.0.0']
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] TUIReportPlugin: Initializing connection attempts...
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Trying to connect to 127.0.0.1:43567...
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Connection attempt 1/3 to 127.0.0.1:43567...
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] _setup_connection: Attempting to connect to 127.0.0.1:43567 with timeout 1s...
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] _setup_connection: Connection to 127.0.0.1:43567 SUCCEEDED.
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Successfully connected to 127.0.0.1:43567
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] TUIReportPlugin: Successfully connected to TUI socket at 127.0.0.1:43567.
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] pytest_configure: Plugin registration complete
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] pytest_configure: compilation_status hook is now available
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Loaded plugins: ['138065512329008', 'pytestconfig', 'mark', 'main', 'runner', 'fixtures', 'helpconfig', 'python', 'terminal', 'debugging', 'unittest', 'capture', 'skipping', 'legacypath', 'tmpdir', 'monkeypatch', 'recwarn', 'pastebin', 'assertion', 'junitxml', 'doctest', 'cacheprovider', 'freeze_support', 'setuponly', 'setupplan', 'stepwise', 'warnings', 'logging', 'reports', 'python_path', 'unraisableexception', 'threadexception', 'faulthandler', 'pytest_tui_plugin', 'capturemanager', 'session', 'lfplugin', 'nfplugin', 'tui_reporter']
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: ============================= test session starts ==============================
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: platform linux -- Python 3.12.10, pytest-8.3.5, pluggy-1.6.0 -- /app/mojo-project-env/ql_mojoproj/.magic/envs/default/bin/python
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: cachedir: .pytest_cache
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: rootdir: /app/quantfork
+TestOutputPanel: Handling socket message (JSON string): {"type": "session_start", "timestamp": 1747675630.3094413, "data": {"test_count": 41, "start_time": 1747675630.309439}}...
+TestOutputPanel: Parsed socket message_type: 'session_start', data keys: ['test_count', 'start_time']
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PROTOCOL DEBUG] Found test_data in params for ql/currencies/tests/europe_currencies_test.py::test_currency[europe_currency_BGL]: {'id': 'europe_currency_BGL', 'description': 'Test for European currency BGL', 'currency_code': 'BGL'}
+TestOutputPanel: Prepared for live output (log cleared).
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: collecting ... collected 41 items
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: 
+TestOutputPanel: Handling socket message (JSON string): {"type": "test_start", "timestamp": 1747675630.310386, "data": {"id": "europe_currency_BGL", "description": "Test for European currency BGL"}}...
+TestOutputPanel: Parsed socket message_type: 'test_start', data keys: ['id', 'description']
+Starting test: europe_currency_BGL ('Test for European currency BGL')
+Current collected_data keys: ['europe_currency_BGL']
+TestOutputPanel: Handling socket message (JSON string): {"type": "compilation_status", "timestamp": 1747675630.3106058, "data": {"phase": "cpp_start", "info": "Europe Currency Tests"}}...
+TestOutputPanel: Parsed socket message_type: 'compilation_status', data keys: ['phase', 'info']
+Compilation status received: cpp_start - Europe Currency Tests
+Calling UI update for compilation status: cpp_start - Europe Currency Tests
+TestOutputPanel: Handling socket message (JSON string): {"type": "compilation_status", "timestamp": 1747675641.2956865, "data": {"phase": "cpp_end", "info": "success"}}...
+TestOutputPanel: Parsed socket message_type: 'compilation_status', data keys: ['phase', 'info']
+Compilation status received: cpp_end - success
+Calling UI update for compilation status: cpp_end - success
+TestOutputPanel: Handling socket message (JSON string): {"type": "compilation_status", "timestamp": 1747675641.2958398, "data": {"phase": "mojo_start", "info": "Europe Currency Tests"}}...
+TestOutputPanel: Parsed socket message_type: 'compilation_status', data keys: ['phase', 'info']
+Compilation status received: mojo_start - Europe Currency Tests
+Calling UI update for compilation status: mojo_start - Europe Currency Tests
+TestOutputPanel: Handling socket message (JSON string): {"type": "compilation_status", "timestamp": 1747675641.8351598, "data": {"phase": "mojo_end", "info": "success"}}...
+TestOutputPanel: Parsed socket message_type: 'compilation_status', data keys: ['phase', 'info']
+Compilation status received: mojo_end - success
+Calling UI update for compilation status: mojo_end - success
+TestOutputPanel: Handling socket message (JSON string): {"type": "test_inputs", "timestamp": 1747675641.8647676, "data": {"id": "europe_currency_BGL", "inputs": {}}}...
+TestOutputPanel: Parsed socket message_type: 'test_inputs', data keys: ['id', 'inputs']
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: ../ql/currencies/tests/europe_currencies_test.py::test_currency[europe_currency_BGL] PASSED [  2%]
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR> Traceback (most recent call last):
+Received inputs for europe_currency_BGL: {}
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/main.py", line 283, in wrap_session
+Processed inputs for europe_currency_BGL: []
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     session.exitstatus = doit(config, session) or 0
+TestOutputPanel: Handling socket message (JSON string): {"type": "test_outputs", "timestamp": 1747675641.8648393, "data": {"id": "europe_currency_BGL", "cpp_output": "", "mojo_output": ""}}...
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>                          ^^^^^^^^^^^^^^^^^^^^^
+TestOutputPanel: Parsed socket message_type: 'test_outputs', data keys: ['id', 'cpp_output', 'mojo_output']
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/main.py", line 337, in _main
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     config.hook.pytest_runtestloop(session=session)
+Stored outputs for europe_currency_BGL: CPP: '', Mojo: ''
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+TestOutputPanel: _process_socket_messages: Connection closed by client (recv returned empty).
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     raise exception
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/logging.py", line 803, in pytest_runtestloop
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return (yield)  # Run all the tests.
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>             ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/terminal.py", line 673, in pytest_runtestloop
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     result = yield
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>              ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     res = hook_impl.function(*args)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>           ^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/main.py", line 362, in pytest_runtestloop
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     raise exception
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/warnings.py", line 112, in pytest_runtest_protocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return (yield)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>             ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/assertion/__init__.py", line 176, in pytest_runtest_protocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return (yield)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>             ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 53, in run_old_style_hookwrapper
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return result.get_result()
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_result.py", line 103, in get_result
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     raise exc.with_traceback(tb)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 38, in run_old_style_hookwrapper
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     res = yield
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>           ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/unittest.py", line 429, in pytest_runtest_protocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     res = yield
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>           ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     teardown.throw(exception)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/faulthandler.py", line 88, in pytest_runtest_protocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return (yield)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>             ^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     res = hook_impl.function(*args)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>           ^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/runner.py", line 113, in pytest_runtest_protocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     runtestprotocol(item, nextitem=nextitem)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/runner.py", line 132, in runtestprotocol
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     reports.append(call_and_report(item, "call", log))
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/_pytest/runner.py", line 246, in call_and_report
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     ihook.pytest_runtest_logreport(report=report)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     raise exception
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/mojo-project-env/ql_mojoproj/.magic/envs/default/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     res = hook_impl.function(*args)
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>           ^^^^^^^^^^^^^^^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>   File "/app/quantfork/test/pytest_tui_plugin.py", line 443, in pytest_runtest_logreport
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>     if hasattr(report.node, "detailed_diffs_data"):
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR>                ^^^^^^^^^^^
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: INTERNALERROR> AttributeError: 'TestReport' object has no attribute 'node'
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: 
+_execute_test_script_raw (europe_currencies_test.py) [STDOUT]: ======================== 1 passed, 1 warning in 11.59s =========================
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Processing test report for ql/currencies/tests/europe_currencies_test.py::test_currency[europe_currency_BGL] (passed: True)
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Node data from store: {'inputs': {}, 'cpp_output': '', 'mojo_output': '', 'description': 'Test for European currency BGL'}
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Final inputs for ql/currencies/tests/europe_currencies_test.py::test_currency[europe_currency_BGL]: {} (type: <class 'dict'>)
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PLUGIN DEBUG] Final normalized inputs for europe_currency_BGL: {}
+_execute_test_script_raw (europe_currencies_test.py) [STDERR]: [PROTOCOL DEBUG] Final data for ql/currencies/tests/europe_currencies_test.py::test_currency[europe_currency_BGL] after run: {'inputs': {'Currency Code': 'BGL'}, 'cpp_output': 'Name: Bulgarian lev\nCode: BGL\nNumericCode: 100\nSymbol: lv\nFractionSymbol: \nFractionsPerUnit: 100\nRoundingType: None\nRoundingPrecision: 0\nRoundingDigit: 0\n', 'mojo_output': 'Name: Bulgarian lev\nCode: BGL\nNumericCode: 100\nSymbol: lv\nFractionSymbol: \nFractionsPerUnit: 100\nRoundingType: None\nRoundingPrecision: 0\nRoundingDigit: 0\n', 'description': 'Test for European currency BGL'}
+_execute_test_script_raw (europe_currencies_test.py): Completed. Exit: 3, Full STDOUT len: 9067, Full STDERR len: 20
+Worker (europe_currencies_test.py): Test completed. Full output length: 9067.
+Worker (europe_currencies_test.py): Finished and posted message.
+MainTest: Received execution result for europe_currencies_test.py.
+MainTest (europe_currencies_test.py): In on_test_execution_result. output_panel.socket_data_received = True, output_panel.has_streamed_output = False
+MainTest (europe_currencies_test.py): Socket data was received. Display presumed handled by socket methods.
+TestOutputPanel: Listener thread: Exception (OSError: [Errno 9] Bad file descriptor) during shutdown. Thread exiting.
+TestOutputPanel: Listener thread finished.
+TestOutputPanel: TCP Socket listener stopped for 0.0.0.0:43567.

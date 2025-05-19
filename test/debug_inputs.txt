@@ -1,0 +1,4 @@
+Number of shared_input lines: 2
+Shared inputs:
+['Cash flow sequence: [100, 150, 200]', 'Interest rate: 0.06']
+Joined text: 'Cash flow sequence: [100, 150, 200]\nInterest rate: 0.06'

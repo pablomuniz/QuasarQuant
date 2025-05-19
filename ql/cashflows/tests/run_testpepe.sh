@@ -1,11 +1,18 @@
 #!/bin/bash
 
+echo "TESTS 2"
 echo "Running test pepe..."
-echo "Compiling test code..."
+echo "COMPILATION CPP"
 sleep 1
 echo "Compilation successful!"
+echo "Compilation time: 1.0s"
 
+echo "COMPILATION MOJO"
+sleep 1
+echo "Compilation successful!"
+echo "Compilation time: 1.0s"
 # First test item
+
 echo "TEST_ITEM_ID: test-pepe-001"
 echo "DESCRIPTION: Simple test for cash flow calculations"
 echo "OVERALL_STATUS: PASS"
@@ -26,7 +33,7 @@ echo "OUTPUT: NPV: 95.24"
 echo "MOJO_STDOUT_END"
 
 echo "END_OF_TEST_ITEM"
-
+sleep 2
 # Second test item
 echo "TEST_ITEM_ID: test-pepe-002"
 echo "DESCRIPTION: Complex test with multiple flows"
@@ -47,6 +54,9 @@ echo "CPP_STDOUT_END"
 echo "MOJO_STDOUT_BEGIN"
 echo "OUTPUT: NPV: 398.68"
 echo "MOJO_STDOUT_END"
+
+echo "DIFF: 0.01"
+sleep 2
 
 echo "END_OF_TEST_ITEM"
 

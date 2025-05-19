@@ -1,0 +1,46 @@
+============================= test session starts ==============================
+collecting ... TESTS 2
+Running test pepe...
+COMPILATION CPP
+Compilation successful!
+Compilation time: 1.0s
+COMPILATION MOJO
+Compilation successful!
+Compilation time: 1.0s
+collected 2 items
+
+../ql/cashflows/tests/test_pepe.py::test_compare_cpp_mojo[test-pepe-001] TEST_ITEM_ID: test-pepe-001
+DESCRIPTION: Simple test for cash flow calculations
+SHARED_INPUT_BEGIN
+Cash flow value: 100.00
+Interest rate: 0.05
+SHARED_INPUT_END
+CPP_STDOUT_BEGIN
+OUTPUT: NPV: 95.24
+CPP_STDOUT_END
+MOJO_STDOUT_BEGIN
+OUTPUT: NPV: 95.24
+MOJO_STDOUT_END
+OVERALL_STATUS: PASS
+CPP_EXIT_CODE: 0
+MOJO_EXIT_CODE: 0
+END_OF_TEST_ITEM
+PASSED
+../ql/cashflows/tests/test_pepe.py::test_compare_cpp_mojo[test-pepe-002] TEST_ITEM_ID: test-pepe-002
+DESCRIPTION: Complex test with multiple flows
+SHARED_INPUT_BEGIN
+Cash flow sequence: [100, 150, 200]
+Interest rate: 0.06
+SHARED_INPUT_END
+CPP_STDOUT_BEGIN
+OUTPUT: NPV: 398.67
+CPP_STDOUT_END
+MOJO_STDOUT_BEGIN
+OUTPUT: NPV: 398.68
+MOJO_STDOUT_END
+OVERALL_STATUS: FAIL
+FAIL_REASON: Numerical discrepancy between C++ and Mojo
+DIFF: 0.01
+FAILED
+
+==================== 1 failed, 1 passed, 1 warning in 3.04s ====================

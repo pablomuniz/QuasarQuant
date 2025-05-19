@@ -54,7 +54,10 @@ fn print_currency_properties(code: String):
     elif code == "SKK": selected_currency = SKKCurrency
     # Other European currencies
     elif code == "UAH": selected_currency = UAHCurrency
-
+    elif code == "RSD": selected_currency = RSDCurrency
+    elif code == "HRK": selected_currency = HRKCurrency
+    elif code == "BGN": selected_currency = BGNCurrency
+    elif code == "GEL": selected_currency = GELCurrency
     else:
         print("Error: Unknown currency code '", code, "' in Mojo runner.")
         return

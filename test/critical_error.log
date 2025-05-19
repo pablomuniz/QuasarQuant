@@ -10,3 +10,7 @@ Critical error during test selection or worker initiation: TypeError: DOMNode.ru
 --- End of Critical Error Log Entry ---
 Critical error during test selection or worker initiation: TypeError: DOMNode.run_worker() got multiple values for argument 'group'
 --- End of Critical Error Log Entry ---
+Critical error during test selection or worker initiation: NameError: name 'script_name' is not defined
+--- End of Critical Error Log Entry ---
+Critical error during test selection or worker initiation: NameError: name 'script_name' is not defined
+--- End of Critical Error Log Entry ---

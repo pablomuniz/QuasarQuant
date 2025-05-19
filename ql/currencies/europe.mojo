@@ -120,6 +120,12 @@ var SKKCurrency = Currency("Slovak koruna", "SKK", 703, "Sk", "", 100, Rounding(
 # Ukrainian hryvnia (UAH)
 var UAHCurrency = Currency("Ukrainian hryvnia", "UAH", 980, "\xE2\x82\xB4", "", 100, Rounding())
 
+# Serbian dinar (RSD)
+var RSDCurrency = Currency("Serbian dinar", "RSD", 941, "RSD", "", 100, Rounding())
+
+# Croatian kuna (HRK)
+var HRKCurrency = Currency("Croatian kuna", "HRK", 191, "HRK", "", 100, Rounding())
+
 # Bulgarian lev (BGN)
 var BGNCurrency = Currency("Bulgarian lev", "BGN", 975, "BGN", "", 100, Rounding())
 
