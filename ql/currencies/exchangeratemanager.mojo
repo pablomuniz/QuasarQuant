@@ -13,22 +13,30 @@ from builtin.math import min, max
 from collections.dict import Dict
 from collections.list import List
 from collections.optional import Optional
+#TODO: There are some rouning discrepancies between the mojo and cpp versions.
 
-@value 
-struct ExchangeRate:
+@fieldwise_init
+struct ExchangeRate(Copyable, Movable):
     var source: String  # Currency code
     var target: String  # Currency code
     var rate: Float64   # Changed Float to Float64
     var start_date: Date
     var end_date: Date
+
+    fn __copyinit__(out self, other: Self):
+        self.source = other.source
+        self.target = other.target
+        self.rate = other.rate
+        self.start_date = other.start_date
+        self.end_date = other.end_date
+
+    fn __moveinit__(out self, owned other: Self):
+        self.source = other.source^
+        self.target = other.target^
+        self.rate = other.rate # Float64 is trivial
+        self.start_date = other.start_date^
+        self.end_date = other.end_date^
   
-    fn __init__(out self, source: Currency, target: Currency, rate: Float64, start_date: Date, end_date: Date):
-        self.source = source.code
-        self.target = target.code
-        self.rate = rate
-        self.start_date = start_date
-        self.end_date = end_date
-        
     fn is_valid_at(self, date: Date) -> Bool:
         return date >= self.start_date and date <= self.end_date
   
@@ -38,16 +46,65 @@ struct ExchangeRateManager:
     #change base_currency to optional
     var base_currency: Optional[Currency]
     
+    # Helper to get fully defined currency objects by code
+    # This function needs to be aware of all globally defined currencies.
+    fn _get_full_currency_by_code(self, code: String) -> Optional[Currency]:
+        # European Currencies (from europe.mojo)
+        if code == EURCurrency.code: return EURCurrency
+        if code == ATSCurrency.code: return ATSCurrency
+        if code == BEFCurrency.code: return BEFCurrency
+        if code == DEMCurrency.code: return DEMCurrency
+        if code == ESPCurrency.code: return ESPCurrency
+        if code == FIMCurrency.code: return FIMCurrency
+        if code == FRFCurrency.code: return FRFCurrency
+        if code == GRDCurrency.code: return GRDCurrency
+        if code == IEPCurrency.code: return IEPCurrency
+        if code == ITLCurrency.code: return ITLCurrency
+        if code == LUFCurrency.code: return LUFCurrency
+        if code == NLGCurrency.code: return NLGCurrency
+        if code == PTECurrency.code: return PTECurrency
+        # Add other European currencies if needed for smart_lookup logic (e.g., TRY, RON, PEN, PEI, PEH)
+        if code == TRYCurrency.code: return TRYCurrency
+        if code == TRLCurrency.code: return TRLCurrency # Historic
+        if code == RONCurrency.code: return RONCurrency
+        if code == ROLCurrency.code: return ROLCurrency # Historic
+
+        # American Currencies (from america.mojo)
+        if code == USDCurrency.code: return USDCurrency
+        if code == PENCurrency.code: return PENCurrency
+        if code == PEICurrency.code: return PEICurrency # Historic
+        if code == PEHCurrency.code: return PEHCurrency # Historic
+        # Add other American currencies if needed (e.g., CAD, ARS, BRL, CLP, COP, MXN, TTD, VEB)
+        if code == CADCurrency.code: return CADCurrency
+        if code == ARSCurrency.code: return ARSCurrency
+        if code == BRLCurrency.code: return BRLCurrency
+        if code == CLPCurrency.code: return CLPCurrency
+        if code == COPCurrency.code: return COPCurrency
+        if code == MXNCurrency.code: return MXNCurrency
+        if code == TTDCurrency.code: return TTDCurrency
+        if code == VEBCurrency.code: return VEBCurrency
+
+
+        # Asian Currencies (from asia.mojo)
+        if code == JPYCurrency.code: return JPYCurrency
+        # Add other Asian currencies if needed
+
+        # Oceanian Currencies (from oceania.mojo)
+        if code == AUDCurrency.code: return AUDCurrency
+        # Add other Oceanian currencies if needed
+        
+        # Fallback for unknown codes during smart_lookup
+        print("ExchangeRateManager._get_full_currency_by_code: Unknown currency code encountered: " + code)
+        return None
+
     fn __init__(out self, start_date: Date, end_date: Date, base_currency: Optional[Currency] = None) raises:
         self.rate_map = Dict[Int, List[ExchangeRate]]()
         self.base_currency = base_currency
         self.add_known_rates()
 
-    fn add_rate(mut self, source: Currency, target: Currency, rate: Float64) raises:
+    fn add_rate(mut self, source: Currency, target: Currency, rate: Float64, start_date: Date, end_date: Date) raises:
         var hash_val = self.get_hash(source, target)
-        var max_date = Date.maxDate()
-        #TODO: check if minDate is correct applying it here
-        var exchange_rate = ExchangeRate(source, target, rate, Date.minDate(), max_date)
+        var exchange_rate = ExchangeRate(source.code, target.code, rate, start_date, end_date)
         
         # Initialize list for this hash if needed
         if hash_val not in self.rate_map:
@@ -100,7 +157,7 @@ struct ExchangeRateManager:
         """
         # If same currency, return rate of 1.0
         if source.code == target.code:
-            return ExchangeRate(source, target, 1.0, Date.minDate(), Date.maxDate())
+            return ExchangeRate(source.code, target.code, 1.0, Date.minDate(), Date.maxDate())
         
         # Use current date if no date specified
         var lookup_date = date
@@ -131,7 +188,7 @@ struct ExchangeRateManager:
                 if rate1 is not None and rate2 is not None:
                     # Chain the rates (implementation of ExchangeRate.chain needed)
                     # For now just return the first rate
-                    return rate1
+                    return ExchangeRateManager.chain_rates(rate1.value(), rate2.value())
                 else:
                     return None
         
@@ -151,7 +208,7 @@ struct ExchangeRateManager:
                 if rate1 is not None and rate2 is not None:
                     # Chain the rates (implementation of ExchangeRate.chain needed)
                     # For now just return the first rate
-                    return rate1
+                    return ExchangeRateManager.chain_rates(rate1.value(), rate2.value())
                 else:
                     return None
         
@@ -189,13 +246,16 @@ struct ExchangeRateManager:
         # Check each rate with matching hash for validity at the specified date
         var rates_list = self.rate_map[hash_val]
         for i in range(len(rates_list)):
-            var rate = rates_list[i]
-            if rate.is_valid_at(date):
-                # Check which direction the rate is stored
-                if (rate.source == source.code and rate.target == target.code) or \
-                   (rate.source == target.code and rate.target == source.code):
-                    return rate
-                
+            var rate_definition = rates_list[i] # This is the rate as stored
+            if rate_definition.is_valid_at(date):
+                # Check if the stored rate directly matches the request
+                if rate_definition.source == source.code and rate_definition.target == target.code:
+                    return rate_definition
+                # Check if the inverse of the stored rate matches the request
+                elif rate_definition.source == target.code and rate_definition.target == source.code:
+                    # Return an oriented rate
+                    return ExchangeRate(source.code, target.code, 1.0 / rate_definition.rate, 
+                                        rate_definition.start_date, rate_definition.end_date)
         return None
 
     fn get_hash(self, source: Currency, target: Currency) -> Int:
@@ -209,24 +269,24 @@ struct ExchangeRateManager:
         var max_date = Date.maxDate()
         
         # Currencies obsoleted by Euro
-        self.add_rate(EURCurrency, ATSCurrency, 13.7603)
-        self.add_rate(EURCurrency, BEFCurrency, 40.3399)
-        self.add_rate(EURCurrency, DEMCurrency, 1.95583)
-        self.add_rate(EURCurrency, ESPCurrency, 166.386)
-        self.add_rate(EURCurrency, FIMCurrency, 5.94573)
-        self.add_rate(EURCurrency, FRFCurrency, 6.55957)
-        self.add_rate(EURCurrency, GRDCurrency, 340.750)
-        self.add_rate(EURCurrency, IEPCurrency, 0.787564)
-        self.add_rate(EURCurrency, ITLCurrency, 1936.27)
-        self.add_rate(EURCurrency, LUFCurrency, 40.3399)
-        self.add_rate(EURCurrency, NLGCurrency, 2.20371)
-        self.add_rate(EURCurrency, PTECurrency, 200.482)
+        self.add_rate(EURCurrency, ATSCurrency, 13.7603, Date(1,January,1999), max_date)
+        self.add_rate(EURCurrency, BEFCurrency, 40.3399, Date(1,January,1999), max_date)
+        self.add_rate(EURCurrency, DEMCurrency, 1.95583, Date(1,January,1999), max_date)
+        self.add_rate(EURCurrency, ESPCurrency, 166.386, Date(1,January,1999), max_date)
+        self.add_rate(EURCurrency, FIMCurrency, 5.94573, Date(1,January,1999), max_date)
+        self.add_rate(EURCurrency, FRFCurrency, 6.55957, Date(1,January,1999), max_date)
+        self.add_rate(EURCurrency, GRDCurrency, 340.750, Date(1,January,2001), max_date)
+        self.add_rate(EURCurrency, IEPCurrency, 0.787564, Date(1,January,1999), max_date)
+        self.add_rate(EURCurrency, ITLCurrency, 1936.27, Date(1,January,1999), max_date)
+        self.add_rate(EURCurrency, LUFCurrency, 40.3399, Date(1,January,1999), max_date)
+        self.add_rate(EURCurrency, NLGCurrency, 2.20371, Date(1,January,1999), max_date)
+        self.add_rate(EURCurrency, PTECurrency, 200.482, Date(1,January,1999), max_date)
         
         # Other obsoleted currencies
-        self.add_rate(TRYCurrency, TRLCurrency, 1000000.0)
-        self.add_rate(RONCurrency, ROLCurrency, 10000.0)
-        self.add_rate(PENCurrency, PEICurrency, 1000000.0)
-        self.add_rate(PEICurrency, PEHCurrency, 1000.0)
+        self.add_rate(TRYCurrency, TRLCurrency, 1000000.0, Date(1,January,2005), max_date)
+        self.add_rate(RONCurrency, ROLCurrency, 10000.0, Date(1,July,2005), max_date)
+        self.add_rate(PENCurrency, PEICurrency, 1000000.0, Date(1,July,1991), max_date)
+        self.add_rate(PEICurrency, PEHCurrency, 1000.0, Date(1,February,1985), max_date)
 
     fn hashes(self, hash_val: Int, currency: Currency) -> Bool:
         """
@@ -275,77 +335,110 @@ struct ExchangeRateManager:
         var chained_rate = head.rate * tail.rate
         
         # Use the source from the head and target from the tail
-        var source = Currency(head.source)
-        var target = Currency(tail.target)
+        # var source = Currency(head.source) # No longer needed
+        # var target = Currency(tail.target) # No longer needed
         
         # Use the intersection of the validity periods
         var start_date = max(head.start_date, tail.start_date)
         var end_date = min(head.end_date, tail.end_date)
         
-        return ExchangeRate(source, target, chained_rate, start_date, end_date)
+        return ExchangeRate(head.source, tail.target, chained_rate, start_date, end_date)
 
-    fn smart_lookup(self, source: Currency, target: Currency, date: Date, forbidden: Optional[List[Int]] = None) raises -> Optional[ExchangeRate]:
-        """
-        Try to find a chain of exchange rates to connect source and target currencies.
-        Uses a recursive search with cycle detection to find a valid path.
-        
-        Args:
-                source: The source currency.
-                target: The target currency.
-                date: The date for which the rate is requested.
-                forbidden: Optional list of currency numeric codes that have been visited (to prevent cycles).
-        
-        Returns:
-                Optional[ExchangeRate]: The found exchange rate chain or None if not found.
-        
-        Note: 
-                - This function may raise exceptions when accessing the rate_map.
-        """
-        # First try direct lookup
+    fn smart_lookup(self, source: Currency, target: Currency, date: Date, forbidden_list_param: List[Int]) raises -> Optional[ExchangeRate]:
+        print("\nDEBUG smart_lookup: Entered with source=" + source.code + ", target=" + target.code + ", date=" + date.toString())
+        var forbidden_list_str: String = "DEBUG smart_lookup: forbidden_list_param = ["
+        for i_fpl in range(len(forbidden_list_param)):
+            forbidden_list_str += String(forbidden_list_param[i_fpl])
+            if i_fpl < len(forbidden_list_param) - 1: forbidden_list_str += ", "
+        forbidden_list_str += "]"
+        print(forbidden_list_str)
+
+        # Direct exchange rates are preferred.
         var direct_rate = self.fetch(source, target, date)
         if direct_rate is not None:
+            print("DEBUG smart_lookup: Found direct rate for " + source.code + "->" + target.code)
             return direct_rate
-            
-        # Initialize or use existing forbidden list
-        var forbidden_list = List[Int]()
-        if forbidden:
-            forbidden_list = forbidden.value()
-        else:
-            forbidden_list = List[Int]()
-            
-        # Add source currency to forbidden list to prevent cycles
+
+        # If none is found, turn to smart lookup. The source currency
+        # is forbidden to subsequent lookups in order to avoid cycles.
+        var forbidden_list = forbidden_list_param # Mojo List is a value type, a copy is made.
         forbidden_list.append(source.numeric_code)
         
-        # Iterate through all rates in the map
-        for hash_val_ptr in self.rate_map:
-            var hash_val = hash_val_ptr[]
-            # Check if this hash involves our source currency
-            if self.hashes(hash_val, source):
-                var rates_list = self.rate_map[hash_val]
-                if len(rates_list) > 0:
-                    # Get the first rate in the list
-                    var first_rate = rates_list[0]
-                    
-                    # Determine the other currency in this rate
-                    var other_currency: Currency
-                    if first_rate.source == source.code:
-                        other_currency = Currency(first_rate.target)
+        var new_forbidden_list_str: String = "DEBUG smart_lookup: forbidden_list (after adding " + source.code + "(" + String(source.numeric_code) + ")) = ["
+        for i_fl in range(len(forbidden_list)):
+            new_forbidden_list_str += String(forbidden_list[i_fl])
+            if i_fl < len(forbidden_list) - 1: new_forbidden_list_str += ", "
+        new_forbidden_list_str += "]"
+        print(new_forbidden_list_str)
+
+        # Iterate through all entries in the rate_map
+        for hash_key_ptr in self.rate_map.keys():
+            var current_hash_val = hash_key_ptr[]
+            print("DEBUG smart_lookup: Iterating rate_map, current_hash_val=" + String(current_hash_val))
+
+            if self.hashes(current_hash_val, source): # Check if source currency is part of this hash pair
+                print("DEBUG smart_lookup: Hash " + String(current_hash_val) + " involves source " + source.code)
+                var rates_for_hash = self.rate_map[current_hash_val]
+                if len(rates_for_hash) > 0:
+                    var other_numeric_code_from_hash: Int
+                    if source.numeric_code == current_hash_val % 1000:
+                        other_numeric_code_from_hash = current_hash_val // 1000
                     else:
-                        other_currency = Currency(first_rate.source)
-                        
-                    # Check if the other currency is not forbidden
-                    if not self.is_in_list(forbidden_list, other_currency.numeric_code):
-                        # Try to get a rate from source to other currency
-                        var head_rate = self.fetch(source, other_currency, date)
-                        if head_rate:
-                            # Recursively try to get from other currency to target
-                            var tail_rate = self.smart_lookup(other_currency, target, date, forbidden_list)
-                            if tail_rate is not None:
-                                # Chain the rates together using static method
-                                return ExchangeRateManager.chain_rates(head_rate.value(), tail_rate.value())
-        
-        # If we get here, no valid path was found
-        print("No conversion path available from", source.code, "to", target.code, "for", date.toString())
+                        other_numeric_code_from_hash = current_hash_val % 1000
+                    print("DEBUG smart_lookup: other_numeric_code_from_hash=" + String(other_numeric_code_from_hash))
+                    
+                    var is_other_forbidden_by_numeric = False
+                    for i in range(len(forbidden_list)):
+                        var f_code_val = forbidden_list[i]
+                        if f_code_val == other_numeric_code_from_hash:
+                            is_other_forbidden_by_numeric = True
+                            break
+                    print("DEBUG smart_lookup: is_other_forbidden_by_numeric (code " + String(other_numeric_code_from_hash) + ")=" + String(is_other_forbidden_by_numeric))
+                    
+                    if not is_other_forbidden_by_numeric:
+                        print("DEBUG smart_lookup: Other (num_code=" + String(other_numeric_code_from_hash) + ") not forbidden, iterating rates in hash list.")
+                        for r_idx in range(len(rates_for_hash)):
+                            var current_entry_rate = rates_for_hash[r_idx]
+                            print("DEBUG smart_lookup:  Current_entry_rate: " + current_entry_rate.source + "->" + current_entry_rate.target)
+                            var potential_other_code_str: String
+
+                            if current_entry_rate.source == source.code:
+                                potential_other_code_str = current_entry_rate.target
+                            elif current_entry_rate.target == source.code:
+                                potential_other_code_str = current_entry_rate.source
+                            else:
+                                print("DEBUG smart_lookup:   Skipping entry rate, does not involve source.code directly.")
+                                continue 
+                            print("DEBUG smart_lookup:   Potential_other_code_str=" + potential_other_code_str)
+                            
+                            var temp_other_curr = Currency(potential_other_code_str)
+                            var actual_other_currency_opt = self._get_full_currency_by_code(temp_other_curr.code)
+
+                            if actual_other_currency_opt is None:
+                                print("DEBUG smart_lookup:   Could not get full currency for " + temp_other_curr.code + ", skipping this path.")
+                                continue
+                            
+                            var actual_other_currency = actual_other_currency_opt.value()
+                            print("DEBUG smart_lookup:   Actual_other_currency: code=" + actual_other_currency.code + ", num_code=" + String(actual_other_currency.numeric_code))
+
+                            print("DEBUG smart_lookup:   Attempting fetch for head_rate: " + source.code + " -> " + actual_other_currency.code)
+                            var head_rate = self.fetch(source, actual_other_currency, date)
+                            if head_rate is not None:
+                                print("DEBUG smart_lookup:   Found head_rate: " + head_rate.value().source + "->" + head_rate.value().target + " rate=" + String(head_rate.value().rate))
+                                print("DEBUG smart_lookup:   Attempting recursive smart_lookup for tail: " + actual_other_currency.code + " -> " + target.code)
+                                var tail_rate = self.smart_lookup(actual_other_currency, target, date, forbidden_list)
+                                if tail_rate is not None:
+                                    print("DEBUG smart_lookup:   Found tail_rate. Chaining and returning.")
+                                    return ExchangeRateManager.chain_rates(head_rate.value(), tail_rate.value())
+                                else:
+                                    print("DEBUG smart_lookup:   Recursive smart_lookup for tail " + actual_other_currency.code + " -> " + target.code + " returned None.")
+                            else:
+                                print("DEBUG smart_lookup:   Fetch for head_rate " + source.code + " -> " + actual_other_currency.code + " returned None.")
+                    else:
+                        print("DEBUG smart_lookup: Other (num_code=" + String(other_numeric_code_from_hash) + ") IS forbidden by numeric code pre-check.")
+
+
+        print("DEBUG smart_lookup: No conversion found for " + source.code + "->" + target.code + ". Returning None.")
         return None
 
     fn clear(mut self) raises:
@@ -354,7 +447,4 @@ struct ExchangeRateManager:
         This matches the C++ implementation's clear() method.
         """
         self.rate_map.clear()
-        #TODO: maybe we should change the next line.
-        # I really dont like that clear() also adds rates.
-        # Solution might be to change the name to reset()
         self.add_known_rates()

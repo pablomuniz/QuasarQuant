@@ -36,7 +36,7 @@ alias Weekday = Int # Using Int as the type for Weekday
 # --- Date Struct --- 
 
 @value # Date should be copyable and movable
-struct Date:
+struct Date(Copyable, GreaterThanComparable, LessThanComparable):
     # QL uses a 32-bit signed int for serial number.
     # We use Int, assuming it's 64-bit usually, which is fine.
     var serialNumber: Int 
@@ -116,19 +116,19 @@ struct Date:
     # --- Constructors ---
 
     # Default constructor -> Null date (serial 0)
-    fn __init__(mut self):
+    fn __init__(out self):
         """Default constructor: creates a null date (serial number 0)."""
         self.serialNumber = 0
 
     # Constructor from serial number
-    fn __init__(mut self, serial: Int):
+    fn __init__(out self, serial: Int):
         """Constructs Date from a serial number."""
         # Date._checkSerialNumber(serial) # Perform validation
         # TODO: Decide on validation enforcement (raise error or allow invalid serials)
         self.serialNumber = serial
 
     # Constructor from day, month, year
-    fn __init__(mut self, d: Day, m: Month, y: Year):
+    fn __init__(out self, d: Day, m: Month, y: Year):
         """Constructs Date from day, month, year."""
         # Validation first
         if y < 1901 or y > 2199:

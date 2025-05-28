@@ -82,26 +82,26 @@ struct Rounding:
     var digit: Int
 
     # Constructor that takes an explicit type
-    fn __init__(mut self, type: RoundingType, precision: Int = 0, digit: Int = 5):
+    fn __init__(out self, type: RoundingType, precision: Int = 0, digit: Int = 5):
         self.type = type
         self.precision = precision
         self.digit = digit
 
     # Overloaded constructor that defaults type to RT_NONE
     # This version specifically sets digit to 0 to match C++ default behavior
-    fn __init__(mut self, precision: Int = 0):
+    fn __init__(out self, precision: Int = 0):
         self.type = RT_NONE
         self.precision = precision
         self.digit = 0 # Set digit to 0 for default (None) rounding type
         
     # Manual Move Initializer
-    fn __moveinit__(mut self, owned existing: Self):
+    fn __moveinit__(out self, owned existing: Self):
         self.type = existing.type^ # Requires type to be movable
         self.precision = existing.precision # Int is copyable/movable
         self.digit = existing.digit       # Int is copyable/movable
 
     # Manual Copy Initializer
-    fn __copyinit__(mut self, existing: Self):
+    fn __copyinit__(out self, existing: Self):
         # RoundingType is @value, so copyable
         self.type = existing.type 
         # Int is copyable

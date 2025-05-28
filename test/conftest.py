@@ -1,1 +1,1 @@
-pytest_plugins = "pytest_tui_plugin" 
+# pytest_plugins = "pytest_tui_plugin" 

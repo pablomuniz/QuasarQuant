@@ -29,7 +29,7 @@ var DKKCurrency = Currency("Danish krone", "DKK", 208, "Dkr", "", 100, Rounding(
 var EEKCurrency = Currency("Estonian kroon", "EEK", 233, "KR", "", 100, Rounding())
 
 # European Euro (EUR)
-var EURCurrency = Currency("European Euro", "EUR", 978, "\xE2\x82\xAC", "", 100, Rounding(RT_CLOSEST, 2))
+var EURCurrency = Currency("European Euro", "EUR", 978, "", "", 100, Rounding(RT_CLOSEST, 2))
 
 # British pound sterling (GBP)
 var GBPCurrency = Currency("British pound sterling", "GBP", 826, "\xA3", "p", 100, Rounding())
@@ -59,7 +59,7 @@ var ROLCurrency = Currency("Romanian leu", "ROL", 642, "L", "", 100, Rounding())
 var RONCurrency = Currency("Romanian new leu", "RON", 946, "L", "", 100, Rounding())
 
 # Russian ruble (RUB)
-var RUBCurrency = Currency("Russian ruble", "RUB", 643, "\xE2\x82\xBD", "", 100, Rounding())
+var RUBCurrency = Currency("Russian ruble", "RUB", 643, "", "", 100, Rounding())
 
 # Swedish krona (SEK)
 var SEKCurrency = Currency("Swedish krona", "SEK", 752, "kr", "", 100, Rounding())
@@ -118,7 +118,7 @@ var PTECurrency = Currency("Portuguese escudo", "PTE", 620, "Esc", "", 100, Roun
 var SKKCurrency = Currency("Slovak koruna", "SKK", 703, "Sk", "", 100, Rounding())
 
 # Ukrainian hryvnia (UAH)
-var UAHCurrency = Currency("Ukrainian hryvnia", "UAH", 980, "\xE2\x82\xB4", "", 100, Rounding())
+var UAHCurrency = Currency("Ukrainian hryvnia", "UAH", 980, "hrn", "", 100, Rounding())
 
 # Serbian dinar (RSD)
 var RSDCurrency = Currency("Serbian dinar", "RSD", 941, "RSD", "", 100, Rounding())

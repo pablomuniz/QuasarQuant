@@ -53,9 +53,6 @@ def test_compare_cpp_mojo(test_data, request):
     request.node.mojo_output = test_data["mojo_output"]
     request.node.inputs = test_data["inputs"]
     
-    # Mark the test with description for better reporting
-    pytest.mark.description(test_data["description"])
-    
     # The actual test is very simple now - just compare outputs
     assert test_data["mojo_output"] == test_data["cpp_output"], \
         f"Mojo output '{test_data['mojo_output']}' differs from QuantLib C++ reference '{test_data['cpp_output']}'"

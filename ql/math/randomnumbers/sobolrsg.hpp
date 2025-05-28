@@ -109,6 +109,8 @@ namespace QuantLib {
     */
     class SobolRsg {
       public:
+        //PABLO: Quantlib not only returns the Quasi-Random numbers, but also the sample type.
+        // We will diverge from Quantlib, as this imo is a bad design.
         typedef Sample<std::vector<Real> > sample_type;
         enum DirectionIntegers {
             Unit, Jaeckel, SobolLevitan, SobolLevitanLemieux,

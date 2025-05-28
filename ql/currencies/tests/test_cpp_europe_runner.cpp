@@ -4,6 +4,8 @@
 #include <string>
 #include <vector>
 #include <stdexcept>
+#include <locale> // Required for std::locale
+#include <clocale> // Required for C-style setlocale
 
 // Helper function to convert QuantLib::Rounding::Type to string
 std::string roundingTypeToString(QuantLib::Rounding::Type type) {
@@ -24,6 +26,8 @@ void printCurrencyProperties(const std::string& code) {
 
     // Map string code to QuantLib currency object
     if (code == "BGL") currency = QuantLib::BGLCurrency();
+
+    
     else if (code == "BYR") currency = QuantLib::BYRCurrency();
     else if (code == "CHF") currency = QuantLib::CHFCurrency();
     else if (code == "CYP") currency = QuantLib::CYPCurrency();
@@ -71,6 +75,12 @@ void printCurrencyProperties(const std::string& code) {
         exit(1); // Exit with error code
     }
 
+    // Debug print to stderr for specific currencies before normal output
+    if (code == "EUR" || code == "RUB" || code == "UAH") {
+        std::string raw_symbol = currency.symbol();
+        std::cerr << "DEBUG C++ for [" << code << "]: Direct symbol from QL: '" << raw_symbol << "' (length: " << raw_symbol.length() << ")" << std::endl;
+    }
+
     // Print properties in a fixed format for easy comparison
     std::cout << "Name: " << currency.name() << std::endl;
     std::cout << "Code: " << currency.code() << std::endl;
@@ -87,6 +97,47 @@ void printCurrencyProperties(const std::string& code) {
 }
 
 int main(int argc, char* argv[]) {
+    // Attempt to set a robust UTF-8 locale for the C++ program's environment.
+    // Try C-style setlocale first for broad impact.
+    char* locale_set = std::setlocale(LC_ALL, "en_US.UTF-8");
+
+    // Then set C++ locale system.
+    try {
+        std::locale::global(std::locale("en_US.UTF-8")); 
+        std::cout.imbue(std::locale("en_US.UTF-8")); 
+        std::cerr.imbue(std::locale("en_US.UTF-8")); 
+    } catch (const std::runtime_error& e) {
+        std::cerr << "Warning: Could not set C++ std::locale to en_US.UTF-8: " << e.what() << std::endl;
+        // As a fallback, try to imbue with the locale derived from C-style setlocale result if it was successful
+        // Or with the system default "" if C-style also failed or returned null for en_US.UTF-8
+        try {
+            if (locale_set) { // If setlocale returned a non-null pointer (meaning it might have succeeded)
+                 std::locale effective_locale(locale_set);
+                 std::locale::global(effective_locale);
+                 std::cout.imbue(effective_locale);
+                 std::cerr.imbue(effective_locale);
+            } else {
+                 // If setlocale failed for en_US.UTF-8, try system default for C++.
+                 std::locale::global(std::locale(""));
+                 std::cout.imbue(std::locale(""));
+                 std::cerr.imbue(std::locale(""));
+            }
+        } catch (const std::runtime_error& e2) {
+            std::cerr << "Warning: Could not set C++ std::locale using fallback: " << e2.what() << std::endl;
+        }
+    }
+
+    if (locale_set) {
+        std::cerr << "DEBUG C++: C-style locale set to: " << locale_set << std::endl;
+    } else {
+        std::cerr << "Warning: C-style std::setlocale(LC_ALL, \"en_US.UTF-8\") failed." << std::endl;
+    }
+    try {
+        std::cerr << "DEBUG C++: std::cout locale name: " << std::cout.getloc().name() << std::endl;
+    } catch (const std::exception& e) {
+        std::cerr << "DEBUG C++: Error getting cout locale name: " << e.what() << std::endl;
+    }
+
     if (argc != 2) {
         std::cerr << "Usage: " << argv[0] << " <CurrencyCode>" << std::endl;
         return 1; // Return error

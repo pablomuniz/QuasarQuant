@@ -56,8 +56,7 @@ namespace QuantLib {
         mutable sample_type sequence_;
         mutable std::uint32_t nextSequenceCounter_;
         mutable std::vector<std::uint32_t> group4Seeds_;
-    };
-
+    };-
 }
 
 
