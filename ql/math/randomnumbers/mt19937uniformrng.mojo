@@ -35,7 +35,7 @@ struct MersenneTwisterUniformRng:
     
     fn __init__(out self, seed: UInt32 = 0):
         """Initialize with a single seed value."""
-        self.mt = InlineArray[UInt32, Self.N]()
+        self.mt = InlineArray[UInt32, Self.N](fill=0)
         self.mti = Self.N
         
         # Break circular dependency - use time-based seed if 0
@@ -173,6 +173,11 @@ struct MersenneTwisterUniformRng:
         """Fill a pre-allocated buffer with random integers."""
         for i in range(count):
             buffer[i] = self.next_int32()
+
+fn main():
+    var rng = MersenneTwisterUniformRng(42)
+    print(rng.next_real())
+
 
 # from collections import List
 # import time
